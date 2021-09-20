@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>JobPosting | Login | Register </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style type="text/css">
+  
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body 
+    {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(assets/images/slider-image-2-1920x900.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .form-box
+    {
+        width: 380px;
+        height: 450px;
+        background: rgba(0,0,0,0.4);
+        margin: 6% auto;
+        position: relative;
+        padding: 5px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .button-box
+    {
+        width: 240px;
+        margin: 25px auto;
+        position: relative;
+        border-radius: 30px;
+        box-shadow: 0 0 15px 3px grey;
+    }
+
+    .toggle-btn
+    {
+        padding:10px 30px;
+        cursor:pointer;
+        background:transparent;
+        border:0;
+        outline: none;
+        position: relative;
+    }
+
+    .toggle-btn:focus
+    {
+      outline: none;
+    }
+
+    #btn
+    {
+        top:0;
+        left:0;
+        position: absolute;
+        width: 130px;
+        height: 100%;
+        background: #a4c639!important;
+        border-radius: 30px;
+        transition: 1s;
+        outline: none;
+    }
+
+    .login-form
+    {
+        top: 145px;
+        position: absolute;
+        width: 280px;
+        transition: 1s;
+    }
+
+    .login-form label
+    {
+      padding: 15px 15px 0 15px;
+    }
+
+
+    .input-field
+    {
+        width: 100%;
+        padding: 5px 0;
+        margin: 5px 0;
+        border-right: 0;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 1.5px solid black;
+        background: transparent;
+        outline: none;
+    }
+
+    .submit-btn
+    {
+        width: 85%;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: block;
+        margin: 10px auto;
+        background: #a4c639!important;
+        border: 0;
+        outline: none;
+        border-radius: 30px; 
+    } 
+
+    #login
+    {
+        left:50px;
+    }
+    
+     #login input
+    {
+        color:white;
+    }
+
+    #register
+    {
+        left:450px;
+    }
+
+     #register input
+    {
+        color:white;
+    }
+
+    .social-icons
+    {
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
+        margin-left: 85px;
+        margin-right: 85px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .social-icons a
+    {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        margin: 0 10px;
+        border-radius: 50%; 
+        box-shadow: 0 0 20px 10px rgba(0,0,0,0.1);
+        position: relative;
+        background-color: #a4c639!important;
+    }
+
+    .social-icons a .fa
+    {
+        font-size: 20px;
+        line-height: 40px;
+        position: relative;
+        z-index: 10;
+    }
+
+    ::placeholder {
+    color:white;
+    opacity: 0.8;
+    }
+
+    .role{
+      font-size: 15px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    .radio{
+      text-decoration: none;
+    }
+
+    .text{
+      font-size: 15px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    .text a {
+      text-decoration: none;
+      color: #a4c639!important;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>Job Agency <em> Website</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="jobs.html">Jobs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+              
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="team.html">Team</a>
+                    <a class="dropdown-item" href="blog.html">Blog</a>
+                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                    <a class="dropdown-item" href="terms.html">Terms</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="login.html">Login</a>
+                 <span class="sr-only">(current)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ***** Login and Register Page ***** -->
+    <div class="container">
+      <div class="form-box">
+
+         <!-- ***** Toggle Button ***** -->
+        <div class="button-box">
+
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()"><b>Login</b></button>
+          <button type="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+        </div>
+        
+         <!-- ***** social media icons  ***** -->
+            <div class="icons">
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+            </div>
+
+         <!-- ***** Login Form ***** -->
+        <form id="login" class="login-form">
+            
+          <input type="email" class="input-field" placeholder="Email Id" required >
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          
+          <button type="submit" class="submit-btn"><b>Login</b></button>
+          
+          <p class="text">Don't Remember a Password ?? <a href="#">Reset password</a></p>
+
+        </form>
+
+         <!-- ***** Register Form ***** -->
+        <form id="register" class="login-form">
+        
+          <input type="text" class="input-field" placeholder="Full Name" required>
+          <input type="email" class="input-field" placeholder="Email Id" required>
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          <input type="password" class="input-field" placeholder="Confirm Password"  required>
+          <input type="radio" name="role" class="radio">
+          <label class="role">Recruiter</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="role" class="radio">
+          <label class="role">Candidate</label>
+          <button type="submit" class="submit-btn"><b>Register</b></button>
+          
+        </form>
+      
+      </div>
+    </div>
+
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+    
+        function register()
+        {
+          x.style.left='-400px';
+          y.style.left='50px';
+          z.style.left='110px';
+        }
+        
+        function login()
+        {
+          x.style.left='50px';
+          y.style.left='450px';
+          z.style.left='0px';
+        }
+      
+    </script>
+
+  
+
+ 
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+  </body>
+</html>
